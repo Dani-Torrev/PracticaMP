@@ -1,0 +1,8 @@
+1
+P1
+Candado
+1
+Numerico
+Hay un candado de combinacion en la puerta. Tiene una nota: Cuantas patas tiene una araña.
+8
+0
