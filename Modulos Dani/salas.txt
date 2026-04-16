@@ -1,0 +1,29 @@
+1
+Pasillo Central
+INICIAL
+Un pasillo largo que conecta las clases.
+2
+Clase 1.1
+NORMAL
+Una clase llena de pupitres y una pizarra.
+3
+Biblioteca
+NORMAL
+Silencio absoluto y estanterias llenas de libros.
+4
+Escalera Arriba
+NORMAL
+Escaleras que suben a la planta superior.
+5
+Escalera Abajo
+NORMAL
+Escaleras que bajan al sotano.
+6
+Cafeteria
+NORMAL
+Huele a cafe recien hecho. Planta alta.
+7
+Laboratorio
+SALIDA
+El laboratorio de computacion. ¡La salida esta aqui!
+FIN
