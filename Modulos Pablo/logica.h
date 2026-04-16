@@ -25,7 +25,30 @@ typedef struct EstadoJuego_s {
 
 } EstadoJuego;
 
+/**
+ * Función: inicializar_datos
+ * Descripción: Inicializa la estructura de estado del juego
+ * 
+ * Precondiciones:
+ *   - juego debe ser un puntero válido a una estructura EstadoJuego
+ * 
+ * Postcondiciones:
+ *   - Se inicializan los campos de juego con valores por defecto
+ *   - El estado queda listo para cargar datos y usarse en el juego
+ */
 void inicializar_datos(EstadoJuego *juego);
+
+/**
+ * Función: liberar_datos
+ * Descripción: Libera la memoria y recursos asociados al estado del juego
+ * 
+ * Precondiciones:
+ *   - juego debe ser un puntero válido a una estructura EstadoJuego previamente inicializada
+ * 
+ * Postcondiciones:
+ *   - Se liberan los recursos dinámicos asociados a juego
+ *   - La estructura juego queda en un estado no válido para uso posterior sin reinicialización
+ */
 void liberar_datos(EstadoJuego *juego);
 
 #endif
