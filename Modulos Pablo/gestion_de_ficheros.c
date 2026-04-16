@@ -3,16 +3,6 @@
 #include <string.h>
 #include "gestion_de_ficheros.h"
 
-/* ============================================================================
- * CABEZA:        void leer_linea(FILE *f, char *buffer, int max_letras)
- * PRECONDICIÓN:  'f' es un puntero válido a un fichero abierto en modo lectura. 
- * 'buffer' es un array con espacio para al menos 'max_letras'. 
- * 'max_letras' es mayor que 0.
- * POSTCONDICIÓN: Lee una línea de texto del fichero y la almacena en 'buffer'. 
- * Se eliminan los caracteres de salto de línea ('\n' y '\r') 
- * para dejar una cadena de texto limpia.
- * ============================================================================ */
-
 void leer_linea(FILE *f, char *buffer, int max_letras) {
     // Leemos de forma segura para evitar desbordamientos de buffer
     if (fgets(buffer, max_letras, f) != NULL){
@@ -21,14 +11,6 @@ void leer_linea(FILE *f, char *buffer, int max_letras) {
         buffer[strcspn(buffer, "\r")] = 0;
     }
 }
-
-/* ============================================================================
- * CABEZA:        void cargar_ficheros_juego(EstadoJuego *juego)
- * PRECONDICIÓN:  'juego' es un puntero válido a una estructura EstadoJuego.
- * POSTCONDICIÓN: Se lee la información de los ficheros "salas.txt", 
- * "puzles.txt" y "conexion.txt". Se reserva la memoria dinámica 
- * necesaria y se inicializan los arrays de la estructura 'juego'.
- * ============================================================================ */
 
 void cargar_ficheros_juego(EstadoJuego *juego){
     FILE *f;
@@ -116,14 +98,6 @@ void cargar_ficheros_juego(EstadoJuego *juego){
         printf("    [ERROR] No se pudo abrir conexion.txt\n");
     }
 }
-
-/* ============================================================================
- * CABEZA:        void guardar_ficheros_juego(EstadoJuego *juego)
- * PRECONDICIÓN:  'juego' apunta a una estructura EstadoJuego inicializada y 
- * con datos en memoria válidos.
- * POSTCONDICIÓN: El estado actual del juego se escribe en disco, sobreescribiendo 
- * los ficheros correspondientes para guardar la partida.
- * ============================================================================ */
 
 void guardar_ficheros_juego(EstadoJuego *juego){
     printf("Guardando partida en progreso...\n");
