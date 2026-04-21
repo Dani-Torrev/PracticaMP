@@ -1,0 +1,41 @@
+10
+1
+Exterior ESI
+INICIO
+Puerta principal cerrada. El Corral esta abierto.
+2
+Corral
+NORMAL
+Un patio tranquilo. Busca la llave por el suelo.
+3
+Pasillo Central
+NORMAL
+El centro de la escuela. Conecta con todo.
+4
+Secretaria
+NORMAL
+Aqui trabaja el conserje gestionando papeles.
+5
+Biblioteca
+NORMAL
+Silencio absoluto. El bibliotecario te observa.
+6
+Planta Alta
+NORMAL
+Pasillo superior de la escuela.
+7
+Cafeteria
+NORMAL
+Huele a cafe recien hecho.
+8
+Baños
+NORMAL
+Estan limpios, pero alguien se ha llevado el papel.
+9
+Laboratorio
+SALIDA
+¡El objetivo final! El santuario del codigo.
+10
+Archivo
+NORMAL
+Un cuarto lleno de estanterias y carpetas viejas.
