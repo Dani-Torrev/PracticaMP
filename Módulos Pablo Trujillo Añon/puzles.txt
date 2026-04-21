@@ -1,0 +1,22 @@
+3
+P2
+Puerta Logica
+8
+NORMAL
+Puerta logica que devuelve 1 solo si AMBAS son 1
+AND
+0
+P3
+El Binario
+5
+NORMAL
+¿Cual es el valor decimal del binario 1011?
+11
+0
+P4
+Codigo Maestro
+10
+NORMAL
+¿Como se llama la funcion principal en un programa C?
+main
+0

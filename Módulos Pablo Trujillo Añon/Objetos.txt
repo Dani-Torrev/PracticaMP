@@ -1,0 +1,4 @@
+3
+O1-Llave-Llave de la ESI-2
+O2-Papel-Rollo de papel-Oculto8
+O3-Tarjeta-Pase de Admin-Oculto10
