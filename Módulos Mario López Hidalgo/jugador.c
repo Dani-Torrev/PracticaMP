@@ -26,23 +26,28 @@ void actualizarPosicion(Jugador *j, char *nueva_sala) {
     j->sala_actual[MAX_ID_SALA - 1] = '\0';
 }
 
-// Añade un objeto al inventario del jugador
+
 int anadirObjeto(Jugador *j, char *id_obj) {
-    // Expande el inventario para un nuevo objeto
-    char **aux = (char **)realloc(j->inventario, (j->num_objetos + 1) * sizeof(char *));
+     // Expande el inventario para un nuevo objeto
+    char *aux = (char *)realloc(j->inventario,
+                  (j->num_objetos + 1) * sizeof(char *));
     if (aux == NULL) {
-        return 0; // Fallo de memoria
+        return 0;
     }
     j->inventario = aux;
-    
-    // Asigna memoria para el ID del objeto
+
+      // Asigna memoria para el ID del objeto
     j->inventario[j->num_objetos] = (char *)malloc(MAX_ID_OBJ * sizeof(char));
-    // Copia el ID del objeto
+      // Copia el ID del objeto
+    if (j->inventario[j->num_objetos] == NULL) {   /* ← línea añadida */
+        return 0;
+    }
+
     strncpy(j->inventario[j->num_objetos], id_obj, MAX_ID_OBJ - 1);
     j->inventario[j->num_objetos][MAX_ID_OBJ - 1] = '\0';
-    
+
     j->num_objetos++;
-    return 1; // Éxito
+    return 1;
 }
 
 // Quita un objeto del inventario del jugador
